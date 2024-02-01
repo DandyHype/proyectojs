@@ -11,10 +11,7 @@
 
 }
 
-body{
-    background: url('../img/hojas.jpg');
-    background-attachment: fixed;
-}
+
 
 #global{
     width: 65%;
@@ -29,7 +26,6 @@ body{
     font-family: Verdana, Arial;
     font-size: 28px;
     letter-spacing: 4px;
-    background: #235E3D;
     color: white;
     text-align: center;
     width: 385px;
@@ -37,7 +33,6 @@ body{
     margin-bottom: 20px;
     line-height: 75px;
     float: left;
-    
     text-transform: uppercase;
 }
 
@@ -59,9 +54,7 @@ body{
     transition: all 300ms ease-in-out;
 }
 
-#menu ul li:hover{
-    background: #235E3D;
-}
+
 
 #menu a{
     display: block;
@@ -81,7 +74,8 @@ body{
     padding: 7px;
 }
 
-.post h2{
+h2{
+    font-family: Helvetica, Arial;
     font-size: 30px;
     color: #333;
 }
@@ -104,7 +98,6 @@ body{
     text-align: center;
     display: block;
     padding: 15px;
-    background: #235E3D;
     color: white;
     text-decoration: none;
     margin-top: 10px;
@@ -142,7 +135,9 @@ body{
 
 form input[type="text"],
 form input[type="email"],
-form input[type="password"]{
+form input[type="password"],
+form input[type="number"],
+select{
     padding: 5px;
     border-radius: 2px;
     border: 1px solid #ccc;
@@ -170,4 +165,92 @@ footer{
     padding-right: 20px;
     margin-top: 50px;
     line-height: 47px;
+}
+
+.subir{
+    color: white;
+    text-decoration: none;
+    display: block;
+    float: right;
+}
+
+.bx-wrapper,
+.bx-viewport{
+    height: 250px !important;
+}
+
+#selector-theme{
+    position: fixed;
+    top: 40%;
+    background: rgba(51, 51, 51, 0.5);
+    width: 50px;
+    height: 100px;
+}
+
+#to-green,
+#to-red,
+#to-blue{
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+    border: 1px solid white;
+    display: block;
+    margin: 5px auto;
+}
+
+#to-green{
+    background-color: #235E3D;
+}
+
+#to-red{
+    background-color: #CA3413;
+}
+
+#to-blue{
+    background-color: #1F87C4;
+}
+
+#box{
+    width: 60%;
+    float: left;
+    margin-top: 40px;
+}
+
+#acordeon{
+    margin-top: 20px;
+}
+
+#reloj{
+    font-size: 40px;
+    font-weight: bold;
+    font-family: Helvetica, Arial;
+    color: #333;
+    border: 3px dashed #333;
+    width: 30%;
+    padding: 30px;
+    margin: 0 auto;
+    text-align: center;
+
+
+}
+
+#form_contact{
+    width: 50%;
+    margin-top: 15px;
+    font-family: Helvetica, Arial;
+}
+
+#form_contact label{
+    display: inline-block;
+    width: 100%;
+    margin-top: 5px;
+}
+
+.form-error{
+    float: right;
+    font-size: 11px;
+    background: red;
+    color: white;
+    padding: 10px;
+    width: 65%;
 }
